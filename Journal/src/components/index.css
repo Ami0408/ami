@@ -1,0 +1,92 @@
+html, body, div{
+ margin: 0px;
+ padding: 0px;
+}
+header{
+  margin: 0px;
+  background: #f55A5A;
+  display: flex; /* Added display flex for better layout */
+  justify-content: center;
+  height: 55px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: -5px -5px 5px 5px lightgrey; 
+ color: white;
+ 
+}
+
+.main {
+  font-size: 20px;
+  font-family: Inter;  
+  color: white;
+  font-weight: 500;
+}
+
+.image-head{
+ height: 20px;
+ width: 30px;
+ color: white;
+ animation: rotate 10s linear infinite;
+}
+header > img {
+	margin-right: 7px;
+}
+aside{
+  font-family: Inter,'sans-serif';
+  color: black;
+  position: relative;
+  right: 0;
+    
+}
+.picture{
+  height: 150px;
+  width: 125px;
+  border-radius: 10px;
+}
+article{
+  margin-top: 15px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  height: 100px;
+  width: auto;
+  line-spacing: 5px;
+  padding: 20px 20px 20px 20px;
+  animation-name: scroll;
+  animation-timeline: view();
+  animation-range: entry 40%;
+}
+article-nth-child(n+2){
+  margin-top: 400px;
+  margin-bottom: 400px;
+}
+h4{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+p{
+font-size: 13px;
+}
+.locate{
+  height: 14px;
+  width: 13px;
+}
+@keyframes rotate{
+ from {
+       transform: scale(0.97) rotate(1deg);
+}
+ to {
+	transform: scale(1.2) rotate(360deg);
+}
+}
+@keyframes scroll{
+ from {
+	opacity: 0;
+	transform: scale(0.5);
+}
+to  {
+	opacity: 1;
+	transform: scale(1);
+}
+}
+
